@@ -5,7 +5,7 @@ import Read from "./Read";
 const Movies = (props) => {
     return props.myMovies.map(
         (movie)=>{
-            return <MovieItem myMovies={movie}/>
+            return <MovieItem myMovies={movie} key={movie.imdbID}/>
         }
     );
   }
