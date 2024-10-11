@@ -2,6 +2,7 @@ import Movies from "./Movies";
 {/* ReadFunction*/ }
 {/* Using seprated components,it separates concerns and makes the app modular*/ }
 
+{/* Variable to store JSON data for movies */ }
 const movies =
     [
         {
@@ -30,6 +31,7 @@ const Read = () => {
     return (
         <div>
         <h3>My Read in another component</h3>
+        {/*Creating a myMovies variable to store the data of each movie so it can be used in Movieitem*/}
         <Movies myMovies={movies}/>
         </div>
     )
